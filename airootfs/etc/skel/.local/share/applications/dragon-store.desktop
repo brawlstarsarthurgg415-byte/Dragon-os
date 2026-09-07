@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Dragon Store
+Comment=Instale e remova aplicativos
+Exec=gnome-software
+Icon=org.gnome.Software
+Categories=System;PackageManager;
+Keywords=app;application;package;software;store;
+Terminal=false
