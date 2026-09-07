@@ -1,0 +1,20 @@
+---
+componentName:  dragonos
+strings:
+    productName:         "Dragon OS"
+    shortProductName:    "Dragon OS"
+    version:             "2026.09"
+    shortVersion:        "2026.09"
+    versionedName:       "Dragon OS 2026.09"
+    shortVersionedName:  "Dragon OS 2026.09"
+    bootloaderEntryName: "Dragon OS"
+    productUrl:          "https://dragonos.local"
+    supportUrl:          "https://dragonos.local/support"
+    knownIssuesUrl:      "https://dragonos.local/issues"
+    releaseNotesUrl:     "https://dragonos.local/release-notes"
+images:
+    productLogo: "dragonos.png"
+    productIcon: "dragonos.png"
+    productWelcome: "welcome.png"
+    productScreenshot: "screenshot.png"
+slideshow: "show.qml"

@@ -1,0 +1,13 @@
+[Unit]
+Description=Create the Dragon OS live user
+After=systemd-user-sessions.service
+Before=display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash -c 'id -u dragon >/dev/null 2>&1 || useradd -m -G wheel,video,audio,storage -s /bin/bash dragon'
+ExecStart=/usr/bin/bash -c 'printf "dragon ALL=(ALL:ALL) NOPASSWD: ALL\\n" > /etc/sudoers.d/99-dragon-live'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

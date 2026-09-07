@@ -1,0 +1,57 @@
+# Base, boot, and AMD A4-compatible X11 stack
+base
+linux
+linux-firmware
+amd-ucode
+mkinitcpio
+# Required by archiso: provides the initramfs hooks that find airootfs.sfs
+# and mount it before systemd switches to the live root filesystem.
+mkinitcpio-archiso
+syslinux
+memtest86+
+memtest86+-efi
+networkmanager
+sudo
+nano
+bash-completion
+xorg-server
+xorg-xinit
+xorg-xrandr
+xf86-video-ati
+xf86-video-amdgpu
+mesa
+vulkan-radeon
+xf86-input-libinput
+
+# Lightweight desktop: X11 only (no Wayland compositor/session packages)
+xfce4
+xfce4-goodies
+lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+picom
+rofi
+papirus-icon-theme
+ttf-jetbrains-mono-nerd
+
+# Graphical tools and Dragon OS workflow
+gnome-software
+packagekit
+terminator
+zellij
+zenity
+dialog
+file-roller
+thunar-archive-plugin
+firefox
+
+# Live installation and ISO maintenance. Calamares is no longer in the
+# official Arch repositories. The launcher uses it when supplied by a custom
+# repository and otherwise opens the supported Archinstall fallback.
+archinstall
+parted
+gptfdisk
+btrfs-progs
+dosfstools
+exfatprogs
+ntfs-3g

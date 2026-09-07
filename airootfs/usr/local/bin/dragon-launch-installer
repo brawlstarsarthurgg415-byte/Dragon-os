@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if command -v calamares >/dev/null 2>&1; then
+  exec pkexec calamares
+fi
+
+if command -v zenity >/dev/null 2>&1 && [[ -n "${DISPLAY:-}" ]]; then
+  zenity --info --title="Install Dragon OS" \
+    --text="Calamares não está disponível nos repositórios oficiais do Arch. O instalador Archinstall será aberto em um terminal." \
+    --width=520
+fi
+
+exec xfce4-terminal --title="Dragon OS Installer" --command="sudo archinstall"

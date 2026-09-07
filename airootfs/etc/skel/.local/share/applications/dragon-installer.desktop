@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Install Dragon OS
+Comment=Instalar o Dragon OS com Archinstall
+Exec=dragon-launch-installer
+Icon=drive-harddisk
+Categories=System;Settings;
+Terminal=false
