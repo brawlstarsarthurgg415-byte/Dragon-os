@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Picom
+Exec=picom --config %h/.config/picom/picom.conf
+OnlyShowIn=XFCE;
+Terminal=false
+X-GNOME-Autostart-enabled=true

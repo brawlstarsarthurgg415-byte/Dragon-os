@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Dragon OS Setup
+Comment=Escolha a experiência Noob ou Pro
+Exec=sh -c '[ -f "$HOME/.config/dragon-os/profile" ] || dragon-setup.sh'
+OnlyShowIn=XFCE;
+Terminal=false
+X-GNOME-Autostart-enabled=true
